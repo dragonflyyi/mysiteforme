@@ -18,6 +18,7 @@ public class Log extends DataEntity<Log> {
 
     private static final long serialVersionUID = 1L;
 
+	private Long   id;
     /**
      * 请求类型
      */
@@ -93,6 +94,17 @@ public class Log extends DataEntity<Log> {
      */
 	private String exception;
 
+
+
+	@Override
+	public Long getId() {
+		return id;
+	}
+
+	@Override
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getType() {
 		return type;

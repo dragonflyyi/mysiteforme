@@ -108,12 +108,12 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/mysiteforme?useUnicode=true&characterEncoding=utf8&useSSL=false&tinyInt1isBit=true
     username: root
-    password: tntjoy
+    password: root #tntjoy
 
 #日志
 logging:
   config: classpath:log/logback.xml
-  path: D:\log\mysiteforme
+  path: /data0/log/mysiteforme
 
 #自定义配置属性
 #源码生成文件夹
@@ -147,12 +147,12 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/mysiteforme?useUnicode=true&characterEncoding=utf8&useSSL=false&tinyInt1isBit=true
     username: root
-    password: 123456
+    password: root #123456
 
 #日志
 logging:
   config: classpath:log/logback.xml
-  path: /home/log/mysiteforme
+  path: /data0/log/mysiteforme
 
 #自定义配置属性
 #源码生成文件夹

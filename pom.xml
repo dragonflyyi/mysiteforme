@@ -36,6 +36,8 @@
 		<guava.version>17.0</guava.version>
 		<quartz.version>2.3.0</quartz.version>
 		<skip>true</skip>
+
+		<poi.version>3.14</poi.version>
 	</properties>
 
 	<repositories>
@@ -285,6 +287,28 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		<!-- apache poi start -->
+
+		         <dependency>
+		             <groupId>org.apache.poi</groupId>
+		             <artifactId>poi</artifactId>
+		             <version>${poi.version}</version>
+		         </dependency>
+
+		         <dependency>
+		             <groupId>org.apache.poi</groupId>
+		             <artifactId>poi-scratchpad</artifactId>
+		             <version>${poi.version}</version>
+		         </dependency>
+
+		         <dependency>
+		             <groupId>org.apache.poi</groupId>
+		             <artifactId>poi-ooxml</artifactId>
+		             <version>${poi.version}</version>
+		         </dependency>
+		 <!-- apache poi end -->
+
 	</dependencies>
 
 	<build>
@@ -292,6 +316,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<fork>true</fork>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

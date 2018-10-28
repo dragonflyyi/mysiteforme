@@ -1,0 +1,4 @@
+# 以下是git 的忽略文件
+.idea/*
+demo.iml
+targe*
